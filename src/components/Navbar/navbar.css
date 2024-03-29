@@ -1,0 +1,55 @@
+.logoImg{
+  height: 5vh;
+  width: 5vw;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 105%;
+    z-index: 1000;
+    background-color: darkblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  
+  /* NavLink Styles */
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .navbar a:hover {
+    background-color: blue;
+  }
+  
+  .navbar a.active {
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  .page-content {
+    flex: 1;
+    padding: 20px;
+  }
+  

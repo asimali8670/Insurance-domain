@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/login/Login";
+import SignUp from "./components/login/SignUp";
+import CustomerDashboard from "./components/CustomerDashboard/CustomerDashboard";
+import AgentDashboard from "./components/AgentDashboard/AgentDashboard";
+import AdminDashboard from "./components/AdminDashboard/AdminDashboard";
+import Navbar from "./components/Navbar/Navbar";
+import Intro from "./components/Intro/Intro";
+import CreateForm from "./components/AdminDashboard/CreateForm";
+import CreateList from "./components/CreateList";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar/>
+      <Routes>
+
+        <Route path="/" element={<Intro />} />
+        <Route path="Login" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="CustomerDashboard" element={<CustomerDashboard />} />
+        <Route path="AgentDashboard" element={<AgentDashboard />} />
+        <Route path="CreateForm" element={<CreateForm />} />
+        <Route path="AdminDashboard" element={<AdminDashboard />} />
+        <Route path="CreateList" element={<CreateList />} />
+
+      </Routes>
     </div>
   );
 }

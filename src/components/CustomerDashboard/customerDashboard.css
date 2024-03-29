@@ -1,0 +1,75 @@
+
+   .img{
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+  }
+  
+  body{
+    overflow-x: hidden;
+    margin: 0;
+  }
+.customerPage{
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Form Styles */
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+

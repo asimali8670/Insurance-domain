@@ -1,0 +1,62 @@
+
+.img3{
+  width: 100vw;
+  height: 80vh;
+}
+
+h2{
+  font-size: 3rem;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+/* Form Styles */
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  background-color: lightblue;
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}

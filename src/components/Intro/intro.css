@@ -1,0 +1,48 @@
+.intro{
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    height: 55vh;
+    margin-top: 100px;
+    width: 100vw;
+}
+
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(61, 44, 131);
+}
+
+.introPara{
+    margin-top: 550px;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgba(47, 30, 109, 0.964);
+    text-align: center; 
+    line-height: 1.5; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.enter{
+    display: flex;
+    justify-content: center;
+}
+
+.enter-btn{
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+     
+}
