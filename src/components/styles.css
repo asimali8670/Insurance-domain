@@ -1,0 +1,21 @@
+*{
+    background-color: lightpink;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+.Accordion-app{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin: 35px;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+    color: navy;
+    
+}
