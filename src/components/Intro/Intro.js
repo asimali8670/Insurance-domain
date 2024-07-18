@@ -1,10 +1,14 @@
 import React from "react";
 import "./intro.css";
 import introimg from "../../assets/introimg.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
+
+
+  const navigate = useNavigate();
   const handleToEnter = () => {
-    window.location.href = "/login";
+navigate("/login");
   };
 
   return (

@@ -3,6 +3,7 @@ import "./login.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -24,6 +25,8 @@ const Login = () => {
     });
   };
 
+  const navigate = useNavigate();
+
   const handleLogin = async () => {
     if (!username || !password) {
       toast.warning("Please enter both username and password");
@@ -38,7 +41,8 @@ const Login = () => {
       const response = await userLoginAPI();
 
       toast.success("Login successful!", response.data);
-      window.location.href = "/customerDashboard";
+      // window.location.href = "/customerDashboard";
+      navigate("/customerDashboard");
     } catch (error) {
       toast.error("Login failed, please try again!", error.message);
     }
